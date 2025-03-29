@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Program</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .abstract {
+            display: none;
+            margin-top: 0.5rem;
+            color: #6b7280;
+        }
+        .abstract-toggle {
+            cursor: pointer;
+            color: #1c398e;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+        .abstract-toggle:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const abstractToggleElements = document.querySelectorAll('.abstract-toggle');
+            abstractToggleElements.forEach(button => {
+                button.addEventListener('click', function() {
+                    const abstractId = this.getAttribute('data-abstract-id');
+                    const abstract = document.getElementById(abstractId);
+                    if (abstract) {
+                        if (abstract.style.display === 'none') {
+                            abstract.style.display = 'block';
+                            this.textContent = 'Hide Abstract';
+                        } else {
+                            abstract.style.display = 'none';
+                            this.textContent = 'Show Abstract';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-900 flex flex-col min-h-screen">
+    <header class="bg-[#003366] text-white py-10 shadow-md">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-2xl font-bold pb-2">Educational Reform in Higher Education in Morocco: Issues, Implementation, and Challenges</h1>
+            <p class="text-md pb-2">Organized by the Language, Society and Culture Studies Lab (LSCS-Lab)</p>
+            <p class="text-sm">(April 23, 2025)</p>
+        </div>
+    </header>
+    <div class="container mx-auto px-6 py-10  flex-grow">
+        <div class="bg-white rounded-lg shadow-md p-8 mb-10">
+            <h2 class="text-2xl font-semibold text-[#003366] pb-3">Conference Description</h2>
+		     <p class="text-md">This conference aims to explore the complexities of reforming higher education in Morocco, with a focus on the evolving roles of educators, institutions, and curricula. As technological advancements and globalization reshape educational paradigms, universities must reconsider how to integrate critical thinking, soft skills, AI literacy, and cultural relevance into their programs. At the same time, universities are under increasing pressure to demonstrate their value by aligning education with the labor market and economic realities, while maintaining their traditional role in fostering well-rounded, informed, and engaged citizens.</p>
+        </div>
+        <main>
+            <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h3 class="text-xl font-semibold text-[#003366] mb-4">Morning Session</h3>
+                <ul class="space-y-6">
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">9:00 - 9:30 AM</div>
+                            <p class="text-gray-900">Registration and Welcome</p>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">9:30 - 10:00 AM</div>
+                            <p class="text-gray-900">Opening Remarks (Dean, Lab Director, Conference Coordinator)</p>
+                        </div>
+                    </li>
+                    <li class="">
+					                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold"></div>
+                            <div class="flex items-center">
+                                 <i class="fas fa-user mr-2 text-[#003366]"></i>
+                                <h4 class="text-lg font-semibold text-[#003366]">Chair: Prof. Ayoub Loutfi</h4>
+                            </div>
+                        </div>
+                    </li>
+                         <div class="bg-blue-50 rounded-lg p-4 shadow-md flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">10:00 - 10:30 AM</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-[#003366]">Keynote: Prof. Abdelkader Sabil</h4>
+                                <p class="text-gray-900">Title TBD</p>
+                                <p class="text-gray-600">Affiliation TBD</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">10:30 - 11:00 AM</div>
+                            <p class="text-gray-900">Keynote Q&A</p>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">11:00 - 11:15 AM</div>
+                            <p class="text-gray-900">Coffee Break</p>
+                        </div>
+                    </li>
+                    <li class="text-gray-700">
+                        <div class="bg-[#003366] rounded-lg p-4 shadow-md">
+                            <h4 class="text-lg font-semibold text-white">11:15 AM - 1:00 PM: Panel 1: Pedagogical Approaches and Reforms</h4>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold"></div>
+                            <div class="flex items-center">
+                                <i class="fas fa-user mr-2 text-[#003366]"></i>
+                                <h4 class="text-lg font-semibold text-[#003366]">Chair: Prof. Meriem Harrizi</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                         <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">11:15 - 11:30 AM</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-[#003366]">Reddad Erguig</h4>
+                                <p class="text-gray-900">Engineering Students’ Mobility in Europe: A Brain Drain or a Brain Gain?</p>
+                                <p class="text-gray-600">Chouaib Doukkali University, El Jadida</p>
+                                <p class="abstract" id="abstract-reddad" style="display: none;">Abstract: </p>
+                                <p class="abstract-toggle" data-abstract-id="abstract-reddad">Show Abstract</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">11:30 - 11:45 AM</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-[#003366]">Ayoub Loutfi¹, Ayoub Noamane² & Abdennour Sabiri¹</h4>
+                                <p class="text-gray-900">Navigating AI, Soft Skills, and Market-Driven Reforms in Moroccan Universities: The Case of Humanities Schools</p>
+                                 <p class="text-gray-600">Mohammed V University in Rabat², Hassan II University of Casablanca¹</p>
+                                 <p class="abstract" id="abstract-ayoub" style="display: none;">Abstract: </p>
+                                 <p class="abstract-toggle" data-abstract-id="abstract-ayoub">Show Abstract</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">11:45 - 12:00 PM</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-[#003366]">Taoufik Jaafari & Rachid El Khayma</h4>
+                                <p class="text-gray-900">Teacher Resilience: Key to Empowering Teachers to Overcome Reform Challenges</p>
+                                <p class="text-gray-600">Hassan II University of Casablanca</p>
+                                 <p class="text-gray-700 mt-2 abstract" id = "abstract-taoufik" style="display: none;">Abstract: </p>
+                                 <p class="abstract-toggle" data-abstract-id="abstract-taoufik">Show Abstract</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">12:00 - 12:15 PM</div>
+                            <div>
+                                 <h4 class="text-lg font-semibold text-[#003366]">Fatima El Hamdi & Malika Eddakhch</h4>
+                                <p class="text-gray-900">Flipped learning in an introductory linguistics SPOC: A Mixed-Methods Study</p>
+                                <p class="text-gray-600">Mohammed V University in Rabat</p>
+                                <p class="text-gray-700 mt-2 abstract" id = "abstract-fatimael" style="display: none;">Abstract: Flipped learning, which delivers instructional content online while reserving classroom time for interactive activities, has become a popular educational method (Bergmann & Sams, 2012; Jong, 2016; Subramaniam, 2019; Gutiérrez-González, Ruiz-Palmero et al., 2020; Zamarron, Royuela, & Rodriguez-Boto, 2023). This method can enhance the learning experience of undergraduate students in Morocco, many of whom find linguistics courses challenging (Bensoukas, 2016; Wahib & Tamer, 2021). This study investigates the impact of flipping the course on the basis of integrating the Introduction to Linguistics - SPOC (Small Private Online Course), with the aim of examining student engagement, learning outcomes, and perceptions of the foundational Introduction to Linguistics, offered in departments of English. Typically, students viewed videos relating to the course components (phonetics, phonology, morphology, etc.) as a pre-class assignment before a face a to face class. Employing a mixed-methods approach, we collected quantitative data through student surveys and qualitative insights from focus groups. The population included 81 students from two institutions at Mohammed V University, who engaged in the flipped classroom format. Findings indicate that the model enhanced student engagement and improved comprehension of course content. Most students reported high levels of satisfaction and found the flipped classroom approach more engaging than traditional teaching methods. Additionally, the majority perceived a positive impact on their understanding of introductory linguistics. However, challenges emerged, including technological difficulties with the online platform, issues in engaging with pre-class content, and concerns regarding motivation. Students also expressed a need for more structured guidance during in-class activities. These findings highlight the potential of flipped classrooms with SPOCs to enhance learning experiences while also emphasizing areas for improvement, particularly in platform functionality and student self-regulation support. This study provides a comprehensive analysis of students' experiences, concluding with recommendations to optimize the implementation of flipped classrooms with SPOCs.</p>
+                                <p class="abstract-toggle" data-abstract-id="abstract-fatimael">Show Abstract</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                         <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">12:15 - 12:30 PM</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-[#003366]">Fatima Zahraa Boutabssil¹ & Moulay Rachid Qasbi²</h4>
+                                <p class="text-gray-900">Integrating Soft Skills in Morocco's Educational Reforms: Challenges and Insights</p>
+                                <p class="text-gray-600">Sultan Moulay Slimane University, Beni Mellal¹ & Hassan I University, Settat²</p>
+                                <p class="text-gray-700 mt-2 abstract" id = "abstract-fatimazahraa" style="display: none;">Abstract: Recent educational reforms in Morocco have highlighted the importance of soft skills integration into the Moroccan educational system. This implementation, however, has triggered debates over its effectiveness considering the practical challenges it has been proven to encounter. This paper discusses a series of outcomes generated from a year of teaching soft skills to Licence d’Excellence students. It addresses a series of variables that are fundamental to the successful inclusion of soft skills in the Moroccan curricula. Per see, this paper accounts for the linguistic aspect of soft skills focusing on the language certification requirement (in English) as a condition for graduation and access to the labour market. As such, it employs an exploratory sequential design based on observation, document analysis and questionnaires. The findings revealed important data. A contextualization process as to what skills are important in what contexts is an important procedure considering the various definitions and frameworks of soft skills. Second, the current educational reforms have paid little attention to the provision of the adequate teaching staff responsible for teaching soft skills. Professors of literature and cultural studies, for instance, may exhibit comparatively less efficacy than those with expertise in soft skills. Other variables namely students’ language proficiency, teaching methods, coordination between the relevant stakeholders were revealed to have considerable impact on the success of these educational reforms. This paper then discusses a comprehensive framework that gathers ingredients that could nurture decision-making in this context.</p>
+                                <p class="abstract-toggle" data-abstract-id="abstract-fatimazahraa">Show Abstract</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">12:30 - 1:00 PM</div>
+                            <p class="text-gray-900">Panel Discussion</p>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">1:00 PM - 2:15 PM</div>
+                            <p class="text-gray-900">Lunch Break</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h3 class="text-xl font-semibold text-[#003366] mb-4">Afternoon Session</h3>
+                <ul class="space-y-6">
+                    <li class="text-gray-700">
+                         <div class="bg-[#003366] rounded-lg p-4 shadow-md">
+                            <h4 class="text-lg font-semibold text-white">2:15 - 3:30 PM: Panel 2: Technology and Innovation in Language Education</h4>
+                         </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold"></div>
+                            <div class="flex items-center">
+                                <i class="fas fa-user mr-2 text-[#003366]"></i>
+                                <h4 class="text-lg font-semibold text-[#003366]">Chair: Prof. Rachid Benfares</h4>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">2:15 - 2:30 PM</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-[#003366]">Fatimaezzahra Abid</h4>
+                                <p class="text-gray-900">Bridging the Digital Divide: Digital Learning Platforms and English Proficiency in Moroccan Higher Education</p>
+                                <p class="text-gray-600">Mohammed V University in Rabat</p>
+                                 <p class="text-gray-700 mt-2 abstract" id = "abstract-abid" style="display: none;">Abstract: Moroccan education is currently at a transformative crossroads, particularly in the years following colonization. Since gaining independence, educational reforms have been pivotal for the country's development as it strives to overcome the legacy of French rule. Despite the advent of ICT tools, the Moroccan educational system continues to encounter contemporary challenges, including issues related to the language of instruction, the balance between traditional and modern educational reforms, and the preparation of university graduates for successful integration into the job market. The incorporation of technology into higher education is not only essential but critical for meeting even the minimum objectives set for a technologically advanced era. This integration ensures that Moroccan educational institutions remain aligned with ongoing social and economic changes and that academic outcomes meet global demands. To facilitate this process, a learning language platform has been implemented as a mandatory resource for students, constituting 60% of their entire grades for the English course, with professors retaining only 40% discretion. After utilizing the platform, Rosetta, for two years, this study examines its role in enhancing the English language learning experience for Moroccan students, assessing whether it simplifies and enriches the learning process or complicates it and proves irrelevant at this stage of reform. Grounded in a theoretical framework that integrates constructivist learning theory with the principles of technology-enhanced language learning, this paper investigates the application of this digital tool in English language acquisition. Employing a questionnaire-based case study targeting students at the Faculty of Law and Economics, the study evaluates their feedback, challenges, and the benefits of the platform in relation to their English language learning. Key questions address the platform’s impact on accessibility, engagement, and learning outcomes within English courses. Preliminary findings indicate that while Rosetta enhances student engagement and offers personalized learning pathways, challenges in digital literacy, platform navigation, and equitable access persist. The study aims to determine whether platforms such as Rosetta contribute meaningfully to English language proficiency and to identify barriers to effective integration. Recommendations will provide guidance for policymakers and educators on optimizing online platforms in Moroccan higher education, including strategies for scaling technology adoption, training faculty and students, and addressing infrastructural limitations to ensure that digital tools foster equitable and effective learning experiences.</p>
+                                 <p class="abstract-toggle" data-abstract-id="abstract-abid">Show Abstract</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">2:30 - 2:45 PM</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-[#003366]">Fatima Chahboune & Hicham Zyad</h4>
+                                <p class="text-gray-900">Exploring Moroccan Teachers' Perspectives on Integrating ChatGPT into Higher Education Curriculum</p>
+                                <p class="text-gray-600">Chouaib Doukkali University, El Jadida</p>
+                                 <p class="text-gray-700 mt-2 abstract" id = "abstract-chahboune" style="display: none;">Abstract: This study explores Moroccan teachers’ perspectives on ChatGPT-Assisted Language Teaching in higher education. It examines the various factors and barriers influencing the integration of ChatGPT into teaching practices. This study is framed within Technology Acceptance Model (Davis,1989). TAM encompasses the constructs that this study aims at exploring : Perceived usefulness(PU), perceived ease of use(PEU), perceived  risk( PR), attitude and actual use(ChatGPT practices). An online questionnaire was administered to 50 professors in different Moroccan universities. Descriptive statistics reveal that the mean scores for PU, PEU, and PR were 3.64, 3.53 and 3.69, respectively, indicating favorable perceptions of professors. Key barriers to ChatGPT adoption include ethical concerns (38% perceived significant impact), lack of training (56% indicated significant or high impact), and insufficient AI knowledge (78% rated it as a significant or high impact). Correlational analysis shows that PU and   PEU significanly influence the actual use of ChatGPT with correlations of (r =0.642, p<0.01) and r= 0.715, p<0.01). In contrast, there is no significant correlation between perceived risk and use  ( r= -0.002, p= 0.991).This study suggests that offering AI-training programs could enhance the integration of ChatGPT in Moroccan academia.</p>
+                                 <p class="abstract-toggle" data-abstract-id="abstract-chahboune">Show Abstract</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">2:45 - 3:00 PM</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-[#003366]">Noureddine Atouf & Bouchaib Benzehaf</h4>
+                                <p class="text-gray-900">Exploring Students' Perceptions and Attitudes toward Rosetta Stone: A Mixed-methods Study</p>
+                                <p class="text-gray-600">Chouaib Doukkali University, El Jadida</p>
+                                 <p class="text-gray-700 mt-2 abstract" id = "abstract-atouf" style="display: none;">Abstract: Technology continues to reshape language education, significantly influencing language learning, particularly in the context of foreign language learning. The integration of applications like Rosetta Stone is impacting language learning by providing interactive, immersive experiences that support the acquisition of language skills, providing real-time feedback, thus transforming language education.  Against this background, the present study aims to investigate Moroccan University students’ experiences of and attitudes to Rosetta Stone as a platform for foreign language learning, focusing on benefits and challenges. To that end, the study used a mixed-methods research design, using questionnaires to explore student attitudes towards the platform, and interviews to gain insights into students’ suggestions for better learning experiences. As for data analysis, we conducted the Mann-Whitney U test to compare groups and applied the Wilcoxon Signed Ranks test to examine rating differences within the undergraduate group. For qualitative data analysis, we employed coding and categorization to identify recurring themes in respondents’ answers to the open-ended questions. The results indicated moderate usage of the platform, with only about 44% of users engaging with it more than once a week. A significant difference was found between undergraduate and postgraduate students, with undergraduates indicating that Rosetta Stone is not easy to use and navigate. The qualitative data lent support to the quantitative data, revealing two predominant themes, namely technical issues and call for cancellation of the platform. In light of the results, some implications are discussed.</p>
+                                 <p class="abstract-toggle" data-abstract-id="abstract-atouf">Show Abstract</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">3:00 - 3:15 PM</div>
+                             <div>
+                                <h4 class="text-lg font-semibold text-[#003366]">Karima Azaimi¹ & Oussama Moussaoui²</h4>
+                                <p class="text-gray-900">Promoting Students' Participation in English Language Projects for Sustainable Development</p>
+                                <p class="text-gray-600">Abdelmalek Essaadi University, Tetouan¹ & Sidi Mohamed Ben Abdellah University, Fès²</p>
+                                 <p class="text-gray-700 mt-2 abstract" id = "abstract-karima" style="display: none;">Abstract: In today’s globalized world, English language proficiency and project-based learning have become integral components of education, offering opportunities for students to actively engage with real-world challenges and contribute to Sustainable Development Goals (SDGs). This work presents a case study from the National School of Applied Sciences in Tetouan, Morocco, focusing on how English language projects are utilized to empower students and foster their involvement in sustainable development initiatives. The approach at the National School of Applied Sciences emphasizes project-based learning methodologies, including project planning, campaigning, volunteering, business studies and other activities, as vehicles for English language instruction. Through these projects, students not only enhance their language skills but also develop critical thinking, collaboration, and problem-solving abilities while addressing issues relevant to their local and global communities. This research employs a qualitative case study methodology to investigate the impact of English language projects on student engagement and learning outcomes. Data collection methods include participant observation, interviews with students and faculty members, analysis of project artifacts, and document analysis of project reports and reflections.</p>
+                                 <p class="abstract-toggle" data-abstract-id="abstract-karima">Show Abstract</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">3:15 - 3:30 PM</div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-[#003366]">Mustapha Zahrane</h4>
+                                <p class="text-gray-900">Leveraging Artificial Intelligence for Authentic Vocabulary Learning: A Dual Approach through Explicit and Implicit Processes</p>
+                                <p class="text-gray-600">Cadi Ayyad University, Marrakesh</p>
+                                 <p class="text-gray-700 mt-2 abstract" id = "abstract-mustapha" style="display: none;">Abstract: Artificial Intelligence (AI) has emerged as a transformative tool in language education, offering innovative ways to enhance authentic vocabulary learning. AI-powered applications, such as adaptive learning platforms, chatbots, and natural language processing tools, provide learners with real-life, contextualized exposure to language, promoting both explicit and implicit vocabulary acquisition. Despite its potential, research on AI’s role in balancing these two learning processes remains limited, particularly in how it supports authentic learning experiences. This study aims to bridge this gap by exploring how AI facilitates explicit and implicit vocabulary learning in authentic contexts. Specifically, it investigates teachers’ and learners’ perceptions of AI-driven tools in English language learning environments. A questionnaire was administered to English language teachers and learners to examine their experiences, challenges, and perceived effectiveness of AI in vocabulary acquisition. Findings reveal that AI enhances vocabulary retention by providing personalized and interactive learning experiences. Explicit learning is reinforced through AI-driven exercises, quizzes, and feedback mechanisms, while implicit learning is fostered through exposure to AI-generated conversations, immersive simulations, and real-time interactions. However, challenges such as technological accessibility, pedagogical integration, and user adaptability were identified. The study underscores the need for educators to integrate AI strategically to optimize its benefits for vocabulary learning. It also highlights the importance of teacher training and curriculum design in leveraging AI’s capabilities for authentic language acquisition. Future research should focus on developing AI-driven pedagogical models that effectively balance explicit and implicit learning strategies.</p>
+                                         <p class="abstract-toggle" data-abstract-id="abstract-mustapha">Show Abstract</p>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">3:30 – 4:00 PM</div>
+                            <p class="text-gray-900">Panel Discussion</p>
+                        </div>
+                    </li>
+                    <li class="">
+                        <div class="bg-blue-50 rounded-lg p-4 shadow-md flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">4:15 - 4:30 PM</div>
+                            <p class="text-gray-900">Coffee Break</p>
+                        </div>
+                    </li>
+                    <li class="text-gray-700">
+                         <div class="bg-[#003366] rounded-lg p-4 shadow-md">
+                            <h4 class="text-lg font-semibold text-white">4:30 - 5:45 PM: Panel 3A & 3B: Parallel Sessions</h4>
+                         </div>
+                    </li>
+                </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    <div class="bg-blue-50 rounded-lg p-4 shadow-sm">
+                        <h4 class="text-lg font-semibold text-[#003366] mb-2">Panel 3A (Room A): Challenges in Higher Education</h4>
+                        <ul class="space-y-4">
+                            <li class="">
+                                <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                                     <div class="mr-4 text-gray-600 font-semibold"></div>
+                                     <div class="flex items-center">
+                                        <i class="fas fa-user mr-2 text-[#003366]"></i>
+                                        <h4 class="text-lg font-semibold text-[#003366]">Chair: Prof. Ayoub Noamane</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                                    <div class="mr-4 text-gray-600 font-semibold">4:30 - 4:45 PM</div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-[#003366]">Khalid Chellali & Mohamed El Amine Moumine</h4>
+                                        <p class="text-gray-900">The Future of the English Department: Integrating AI into Undergraduate English Studies in Moroccan Universities</p>
+                                        <p class="text-gray-600">Hassan II University of Casablanca</p>
+                                         <p class="text-gray-700 mt-2 abstract" id = "abstract-khalid" style="display: none;">Abstract: This study explores the potential of integrating artificial intelligence (AI) into undergraduate English studies at Moroccan universities, examining both the opportunities and challenges. Through a narrative literature review, the study investigates how AI can transform the curriculum, focusing on its application in foundational language skills (reading, writing, speaking, and listening) and specialized areas such as linguistics, literature, cultural studies, and translation. AI tools can personalize learning by providing real-time feedback and tailored exercises, enhance access to diverse resources, and empower professors by automating tasks like assessment and lesson plan creation. However, challenges such as limited IT infrastructure, low AI literacy, ethical concerns, and the lack of clear policies hinder effective AI integration. The study concludes with recommendations for addressing these challenges through infrastructure investment, AI training, ethical frameworks, and collaborative efforts. It emphasizes that AI should complement, not replace, human instruction, fostering a balanced approach that combines technological advancements with the essential guidance of educators.</p>
+                                         <p class="abstract-toggle" data-abstract-id="abstract-khalid">Show Abstract</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                                     <div class="mr-4 text-gray-600 font-semibold">4:45 - 5:00 PM</div>
+                                     <div>
+                                         <h4 class="text-lg font-semibold text-[#003366]">Hamza El Ajadi</h4>
+                                        <p class="text-gray-900">More Pronounced Micro Power in Moroccan Higher Education Institutions During Early Stages of Educational Reforms</p>
+                                         <p class="text-gray-600">Hassan II University of Casablanca</p>
+                                         <p class="text-gray-700 mt-2 abstract" id = "abstract-hamza" style="display: none;">Abstract: The bread-and-butter issues of Moroccan students, when educational reforms are first rolled out, have, to a large extent, concerned educators and researchers. In relation to the previous point, how power – the one exerted by new reforms – flows from the ministry of education through the web of various channels, with higher education institutions as intermediaries, is, as yet, unclear. Rooted in political sociology, this study, to ground itself, draws on Foucault’s Micro-Physics of power and Deleuze and Guattari’s concept of Rhizome. As these two philosophers expounded, rhizomatic concept spatializes our thinking about power and order – two interrelated constructs, the former of which, as Foucault contended, can be microcosmically localized at any level within a large system. Consistent with Foucault’s thinking, this study argues that, in the early stages of reform implementation, the centrality of power is questioned, while still acknowledging its top-down nature. The research aims to illustrate how each higher education institution acts as an agent of power formation so as to tackle the issues faced by students as they experience the newly implemented reform. The study adopted an exploratory mixed-methods design, with non-participant observation informing the 3 questionnaires. Using stratified sampling, the study collected divergent data from all Moroccan universities, focusing on students across the three tertiary levels as they navigate the ESRI 2030 Pact Reform. The primary finding indicated that power is not simply imposed in a top-down fashion but mutates as it flows through different academic settings. At the institutional level, in addressing students’ problems related to the reform, power undergoes processes of decentralization and reinterpretation, resulting in its micro-level nature, strategic adaptation, and co-production by various stakeholders. Still, as the reform progresses, the research revealed that power eventually recentralizes, a reaffirmation of its vertical structure. The findings further asserted Foucault’s view, that power can also be positive, not just interdictive. The implications of the present work emphasize that the power exercised in the new reforms operates through meaningful agency, as Moroccan educational structures function as interactive creations rather than mere obstacles to educational improvement.</p>
+                                         <p class="abstract-toggle" data-abstract-id="abstract-hamza">Show Abstract</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                                     <div class="mr-4 text-gray-600 font-semibold">5:00 - 5:15 PM</div>
+                                     <div>
+                                         <h4 class="text-lg font-semibold text-[#003366]">Kaoutar Atarchi</h4>
+                                        <p class="text-gray-900">I Will Not Perish in French: A Qualitative Study of Moroccan Doctoral Students' Writing Process in the Hard Sciences</p>
+                                        <p class="text-gray-600">Chouaib Doukkali University, El Jadida</p>
+                                         <p class="text-gray-700 mt-2 abstract" id = "abstract-kaoutar" style="display: none;">Abstract: The dominance of English in scientific research has unified the scholarly community, yet it has come with challenges as it is well documented in various threads in the literature (Amano et al. 2021; Romero-Olivares 2019; Tong 2022; Woolston and Osório2019). In non-English-speaking countries, scholars encounter linguistic discrimination that hinders them from using their mother tongues or, at the very least, the foreign language in which they were trained, such as French in the case of North African countries in general, and Morocco in particular. In response to this issue, this presentation aims to explore the process of writing research articles by interviewing 10 doctoral students majoring in the hard sciences at Hassan II University. The analytical framework adopted is a combination of inductive and deductive coding approaches, generating three major themes and 12 subthemes that describe the stages of writing research articles. The findings reveal that producing a paper in English requires a plethora of strategies and techniques including self-translation from French into English, the use of artificial intelligence tools to translate, paraphrase, and refine the quality of the English language along with language reuse from the literature. Besides, the interviews have explored the challenges impeding the researchers` writing performance in English such as the interference of French and lack of discipline-specific training in English. Given the uncontested dominance of English in scientific research, understanding the writing experiences of this disadvantaged group helps design tailored language courses that address the rhetorical differences between French and English, as well as the rise of AI language tools.</p>
+                                         <p class="abstract-toggle" data-abstract-id="abstract-kaoutar">Show Abstract</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                 <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-2 flex items-start">
+                                    <div class="mr-4 text-gray-600 font-semibold">5:15 - 5:45 PM</div>
+                                    <p class="text-gray-900">Panel Discussion & Closing remarks</p>
+                                 </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 rounded-lg p-4 shadow-sm">
+                        <h4 class="text-lg font-semibold text-[#003366] mb-2">Panel 3B (Room B): Student Development and Linguistic Skills</h4>
+                        <ul class="space-y-4">
+                            <li class="">
+                                <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                                     <div class="mr-4 text-gray-600 font-semibold"></div>
+                                     <div class="flex items-center">
+                                        <i class="fas fa-user mr-2 text-[#003366]"></i>
+                                         <h4 class="text-lg font-semibold text-[#003366]">Chair: Prof. Ayoub Loutfi</h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                                    <div class="mr-4 text-gray-600 font-semibold">4:30 - 4:45 PM</div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-[#003366]">Jalil Abdelilah</h4>
+                                        <p class="text-gray-900">Project-Based Learning for Students' Collaboration in Moroccan Higher Education: Professors' and Students' Perspectives</p>
+                                        <p class="text-gray-600">Hassan II University of Casablanca</p>
+                                         <p class="text-gray-700 mt-2 abstract" id = "abstract-jalil" style="display: none;">Abstract: Project-Based Learning (PBL) is an innovative teaching method that enables students to acquire 21st- century job market skills, become more efficient and contribute to development. This article investigates how students’ collaboration is perceived and applied by university professors and their students in the Moroccan higher educational context through the implementation of PBL. It also seeks to explore the challenges they face during its implementation. This quantitative study employed survey questionnaires to collect data from randomly selected university professors of English at Hassan II University as well as their students, resulting in 99 responses. It utilized descriptive statistics to analyze the data and extract key findings. The latter reveal that both professors and their students hold positive attitudes towards PBL because it helps students foster collaboration skills, reinforce motivation and engagement, enhance understanding and retention of material, and prepare for real-world problem solving. However, the study identified significant challenges: For professors, lack of incentives and training in PBL, insufficient institutional support, inadequate assessment methods and resources, resistance among faculty members to PBL implementation, and the demanding PBL management are the main challenges. For students, their professors’ unclear guidelines and objectives about PBL, working in mixed-ability groups, managing unequal contributions from their peers and the time-consuming nature of PBL may render their experience with PBL somewhat stressful and frustrating. The results imply the need to provide support and resources for professors, to foster a collaborative and supportive PBL environment and to scaffold student learning by enhancing the learning outcomes for all involved.</p>
+                                         <p class="abstract-toggle" data-abstract-id="abstract-jalil">Show Abstract</p>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                                     <div class="mr-4 text-gray-600 font-semibold">4:45 - 5:00 PM</div>
+                                     <div>
+                                        <h4 class="text-lg font-semibold text-[#003366]">Ismail El-Baghdadi</h4>
+                                        <p class="text-gray-900">Enhancing Learners' Critical Thinking Skills through Translated Philosophical Texts</p>
+                                        <p class="text-gray-600">Abdelmalek Essaadi University, Tetouan</p>
+                                         <p class="text-gray-700 mt-2 abstract" id = "abstract-ismail" style="display: none;">Abstract: </p>
+                                         <p class="abstract-toggle" data-abstract-id="abstract-ismail">Show Abstract</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-3 flex items-start">
+                                     <div class="mr-4 text-gray-600 font-semibold">5:00 - 5:15 PM</div>
+                                     <div>
+                                         <h4 class="text-lg font-semibold text-[#003366]">Aya Moubariki & Chaimaa El Bachary</h4>
+                                        <p class="text-gray-900">English Proficiency Levels of Students in Light of Educational Reforms, 2023</p>
+                                        <p class="text-gray-600">Hassan II University of Casablanca</p>
+                                         <p class="text-gray-700 mt-2 abstract" id = "abstract-aya" style="display: none;">Abstract: This paper investigates the English proficiency levels of students from the English Department in light of the educational reforms, 2023. A 20-scale test was administered covering reading comprehension, vocabulary, and grammar as aligned with the content taught within the program. The paper recruited three different groups for this purpose, Baccalaureate group (n = 50) serving as the baseline proficiency level of pre-program proficiency, Semester 4 students (n = 50) and Semester 6 students (n = 50) from the Faculty of Letters and Humanities Ben M’sik (Hassan II University of Casablanca). The study employs a quantitative approach using a combination of descriptive (minimum and maximum test scores across the groups) and inferential statistics (Kruskal-Wallis H test and a Post Hoc test) to understand the extent to which test scores meet the B2 benchmark outlined in the educational reforms (2023). The results revealed significant differences between the groups. However, students’ overall performance falls short of the intended B2 proficiency level. This state of affairs posits serious challenges and implications for Moroccan English departments’ programs which are discussed drawing on the CIPP model (Context, Input, Process, Product). In light of these findings, the research calls for collaborative efforts among stakeholders and scholars to make informed decisions regarding the English department program through the four components of the CIPP model for a more comprehensive view of the challenges.</p>
+                                         <p class="abstract-toggle" data-abstract-id="abstract-aya">Show Abstract</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="">
+                                <div class="bg-blue-50 rounded-lg p-4 shadow-md mb-2 flex items-start">
+                                     <div class="mr-4 text-gray-600 font-semibold">5:15 - 5:45 PM</div>
+                                     <p class="text-gray-900">Panel Discussion</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="space-y-2 mt-6">
+                    <li class="">
+                         <div class="bg-blue-50 rounded-lg p-4 shadow-md flex items-start">
+                            <div class="mr-4 text-gray-600 font-semibold">5:45-6:00 PM</div>
+                            <p class="text-gray-900">Closing remarks</p>
+                         </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer class="bg-gray-800 text-white py-4 mt-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>National Conference on Educational Reform in Higher Education in Morocco</p>
+			<p>&copy; 2025 - All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
